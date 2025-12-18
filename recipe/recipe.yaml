@@ -12,7 +12,7 @@ source:
   sha256: 04dec63b2f6b958558b138f6ce0e6f9a95bc21b21f614e5a585ab405e90840e3
 
 build:
-  number: 2
+  number: 3
   skip: win
 
 requirements:
@@ -24,8 +24,9 @@ requirements:
     - make
   host:
     - root
+    - root_base
   run:
-    - ${{ pin_compatible('root', upper_bound='x.x') }}
+    - ${{ pin_compatible('root_base', upper_bound='x.x') }}
   run_exports:
     - ${{ pin_subpackage('laura', upper_bound='x.x') }}
 
