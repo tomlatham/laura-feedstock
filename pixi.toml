@@ -9,7 +9,7 @@ version = "3.55.1"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/laura-feedstock"
 authors = ["@conda-forge/laura"]
 channels = ["conda-forge"]
-platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+platforms = ["linux-64", "linux-aarch64", "linux-ppc64le", "osx-64", "osx-arm64", "win-64"]
 requires-pixi = ">=0.59.0"
 
 [dependencies]
@@ -41,6 +41,42 @@ description = "Build laura-feedstock with variant linux_64_root_base6.38.0root_c
 [tasks."inspect-linux_64_root_base6.38.0root_cxx_standard23"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.38.0root_cxx_standard23.yaml"
 description = "List contents of laura-feedstock packages built for variant linux_64_root_base6.38.0root_cxx_standard23"
+[tasks."build-linux_aarch64_root_base6.36.8root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.36.8root_cxx_standard20.yaml"
+description = "Build laura-feedstock with variant linux_aarch64_root_base6.36.8root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_root_base6.36.8root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.36.8root_cxx_standard20.yaml"
+description = "List contents of laura-feedstock packages built for variant linux_aarch64_root_base6.36.8root_cxx_standard20"
+[tasks."build-linux_aarch64_root_base6.38.0root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.38.0root_cxx_standard20.yaml"
+description = "Build laura-feedstock with variant linux_aarch64_root_base6.38.0root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_root_base6.38.0root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.38.0root_cxx_standard20.yaml"
+description = "List contents of laura-feedstock packages built for variant linux_aarch64_root_base6.38.0root_cxx_standard20"
+[tasks."build-linux_aarch64_root_base6.38.0root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_root_base6.38.0root_cxx_standard23.yaml"
+description = "Build laura-feedstock with variant linux_aarch64_root_base6.38.0root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_root_base6.38.0root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_root_base6.38.0root_cxx_standard23.yaml"
+description = "List contents of laura-feedstock packages built for variant linux_aarch64_root_base6.38.0root_cxx_standard23"
+[tasks."build-linux_ppc64le_root_base6.36.8root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.36.8root_cxx_standard20.yaml"
+description = "Build laura-feedstock with variant linux_ppc64le_root_base6.36.8root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_root_base6.36.8root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.36.8root_cxx_standard20.yaml"
+description = "List contents of laura-feedstock packages built for variant linux_ppc64le_root_base6.36.8root_cxx_standard20"
+[tasks."build-linux_ppc64le_root_base6.38.0root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.38.0root_cxx_standard20.yaml"
+description = "Build laura-feedstock with variant linux_ppc64le_root_base6.38.0root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_root_base6.38.0root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.38.0root_cxx_standard20.yaml"
+description = "List contents of laura-feedstock packages built for variant linux_ppc64le_root_base6.38.0root_cxx_standard20"
+[tasks."build-linux_ppc64le_root_base6.38.0root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_root_base6.38.0root_cxx_standard23.yaml"
+description = "Build laura-feedstock with variant linux_ppc64le_root_base6.38.0root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_root_base6.38.0root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_root_base6.38.0root_cxx_standard23.yaml"
+description = "List contents of laura-feedstock packages built for variant linux_ppc64le_root_base6.38.0root_cxx_standard23"
 [tasks."build-osx_64_root_base6.36.8root_cxx_standard20"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.36.8root_cxx_standard20.yaml"
 description = "Build laura-feedstock with variant osx_64_root_base6.36.8root_cxx_standard20 directly (without setup scripts)"
