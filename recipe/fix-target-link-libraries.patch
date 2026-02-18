@@ -1,5 +1,5 @@
---- a/Laura++/src/CMakeLists.txt
-+++ b/Laura++/src/CMakeLists.txt
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
 @@ -10,9 +10,9 @@
  set_target_properties(Laura++ PROPERTIES VERSION ${CMAKE_PROJECT_VERSION} SOVERSION ${CMAKE_PROJECT_VERSION_MAJOR})
  set_target_properties(Laura++ PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
