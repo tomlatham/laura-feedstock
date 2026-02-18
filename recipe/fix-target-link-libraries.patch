@@ -1,0 +1,14 @@
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -10,9 +10,9 @@
+ set_target_properties(Laura++ PROPERTIES VERSION ${CMAKE_PROJECT_VERSION} SOVERSION ${CMAKE_PROJECT_VERSION_MAJOR})
+ set_target_properties(Laura++ PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+ target_include_directories(Laura++ PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/inc> $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${CMAKE_PROJECT_NAME}>)
+-target_link_libraries(Laura++ ROOT::Core ROOT::RIO ROOT::Hist ROOT::Matrix ROOT::Physics ROOT::Minuit ROOT::EG ROOT::Tree)
++target_link_libraries(Laura++ PUBLIC ROOT::Core ROOT::RIO ROOT::Hist ROOT::Matrix ROOT::Physics ROOT::Minuit ROOT::EG ROOT::Tree)
+ if (LAURA_BUILD_ROOFIT_TASK)
+-    target_link_libraries(Laura++ ROOT::RooFit ROOT::RooFitCore)
++    target_link_libraries(Laura++ PUBLIC ROOT::RooFit ROOT::RooFitCore)
+ endif()
+
+ # Install the libraries
